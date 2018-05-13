@@ -5,6 +5,7 @@
     <title>Shildon's Resume</title>
     <link rel="icon" href="./static/D.png" />
     <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   </head>
   <body>
     <div class="allContain">
@@ -24,32 +25,30 @@
                         </div>
                         <div class="goal">
 							<div class="border">
-                            	<h2>求职意向: Java后台开发</h2  >
+                            	<h2>求职意向: Java开发工程师</h2>
 							</div>
                         </div>
                     </div>
-                </div>
-                <div class="contact">
-                    <ul>
-                        <li>Tel: 15622377939</li>
-                        <li>Blog: <a href="http://shildon.leanote.com/">http://shildon.leanote.com/</a></li>
-                        <li>GitHub: <a href="https://github.com/shildondu">https://github.com/shildondu</a></li>
-                        <li>Email: shildondu@gmail.com</li>
-                    </ul>
                 </div>
                 <div class="info">
                     <h1>基本信息</h1>
 					<div class="underline"></div>
                     <ul>
-                        <li>学校: 广东工业大学</li>
-                        <li>专业: 计算机科学与技术</li>
-                        <li>学历: 本科</li>
+                        <li class="fas fa-graduation-cap"> 广东工业大学(本科)</li>
+                        <li class="fas fa-book"> 计算机科学与技术</li>
+                        <li class="fas fa-mobile-alt"> 15622377939</li>
+                        <!--
+                        <li>Blog: <a href="http://shildon.leanote.com/">http://shildon.leanote.com/</a></li>
+                        <li>GitHub: <a href="https://github.com/shildondu">https://github.com/shildondu</a></li>
+                        -->
+                        <li class="fas fa-envelope"> shildondu@gmail.com</li>
                     </ul>
                 </div>
             </div>
             <div class="rightContain">
                 <div class="null">
                 </div>
+                <!--
                 <div class="experience">
                     <h1>实践经历</h1>
                     <ul>
@@ -67,28 +66,43 @@
                         </li>
                     </ul>
                 </div>
+                -->
                 <div class="skill">
                     <h1>职业技能</h1>
                     <ul>
-                        <li>Java语言扎实，熟悉集合，IO，网络编程，多线程等。了解JVM原理，Java 8新特性</li>
-						<li>熟悉Java Web技术体系，理解MVC开发架构。</br>掌握Spring/Mybatis/Struts2/Hibernate/Netty/Shiro/Springfox等开源框架的使用，了解Spring，MyBatis，Netty部分源码</li>
-                        <li>掌握非关系型数据库Redis，关系型数据库Mysql的使用，对sql查询优化有一定的了解</li>
-						<li>掌握Linux操作系统，SVN，Git，Maven的使用</li>
-                        <li>掌握数据结构，数据库理论，计算机网络，操作系统等专业知识</li>
-						<li>了解Zookeeper，Hadoop，ElasticSearch，KafKa</li>
-                        <li>了解JavaScript，CSS，HTML以及JQuery和ExtJs等前端框架</li>
+                        <li class="fas fa-angle-right"> Java语言扎实，掌握集合、IO、NIO、并发包的使用及部分实现。了解JVM、垃圾回收，GC日志分析</li>
+						<li class="fas fa-angle-right"> 熟悉Java Web技术体系，理解微服务架构，掌握Spring、Mybatis等开源框架的使用，了解Spring、MyBatis部分源码</li>
+                        <li class="fas fa-angle-right"> 掌握非关系型数据库Redis、MongoDB的使用，能够合理应用Redis提供的数据结构</li>
+                        <li class="fas fa-angle-right"> 掌握关系型数据库MySQL的设计与使用，对SQL查询优化有一定的了解</li>
+                        <li class="fas fa-angle-right"> 掌握消息队列RabbitMQ的基本设计与原理，有集群搭建经验</li>
+						<li class="fas fa-angle-right"> 掌握Linux操作系统，常用版本控制工具SVN、Git及项目管理工具Maven的使用</li>
+						<li class="fas fa-angle-right"> 了解RPC框架Thrift</li>
+                        <li class="fas fa-angle-right"> 了解JavaScript、CSS、HTML以及JQuery和VueJS等前端框架</li>
                     </ul>
                 </div>
                 <div class="project">
-                    <h1>项目经验</h1>
+                    <h1>工作经验</h1>
                     <ul>
+                        <li>
+                            <h2>欢聚时代(YY)电商业务项目组(2017.03--至今)</h2>
+                            <h3>职位：Java开发工程师</h3>
+                            <h3>主要工作：</h3>
+                            <p>1. 负责APP、小程序首页数据的设计与实现，将首页数据抽象为页面、模块、数据源、数据项等，定时缓存到Redis，并提供管理后台实现动态配置，达到扩展性高的要求</p>
+                            <p>2. 基于Spring Quartz实现一个简单的分布式任务调度框架，定时触发任务，并将任务触发事件包装成消息发送到消息队列，具体的任务内容在各个服务的消费者线程进行消费执行。同时提供管理后台，实现动态添加、执行、暂停、删除任务等操作</p>
+                            <p>3. 参与设计并搭建RabbitMQ集群，每个机房搭建2个磁盘节点与2个内存节点，机房之间使用Shovel插件进行同步复制，解决现有MQ可用性低、消息丢失、消息堆积等问题，提供性能安全监控</p>
+                            <p>4. 参与设计优化优惠券服务，对原有优惠券服务进行细分，抽象出更多角色，包括优惠券、池、规则等，以满足变化的运营活动的需求。使用Redis缓存优惠券库存，异步将优惠券库存扣减同步到数据库，以提高并发效率</p>
+                            <p>5. 参与设计实现订单服务、物流服务、商品服务、评价服务、以及各种运营活动</p>
+                        </li>
 						<li>
-							<h2>网易有钱后端开发(2016.05--2016.09)</h2>
-							<ul>
-								<li><h3>主要工作</h3></li>
-								<p>主要负责换卡系统，财经直播，第三方API权限控制，资产分析的开发，以及调研Swagger等API文档生成框架，基于Zookeeper实现分布式锁，解决Groovy脚本频繁产生FullGC的问题，搭建ELK Stack + Filebeat集中化日志分析检索平台。</p>
-							</ul>
+							<h2>网易邮件事业部(2016.05--2016.09)</h2>
+                            <h3>职位：Java开发实习生</h3>
+                            <h3>主要工作：</h3>
+                            <p>1. 参与换卡系统、财经直播、第三方API权限控制、资产分析的开发</p>
+                            <p>2. 调研Swagger等API文档生成框架，引入SpringFox，基于Swagger提供的标准注解，自动生成API文档</p>
+                            <p>3. 调研Zookepper及Redis分布式锁实现方式，实现了一个简单的Redis分布式锁</p>
+                            <p>4. 测试环境搭建ELK Stack集中化日志分析检索服务，使用FileBeat监听不同部服务日志的变化，LogStash进行日志搜集过滤，并输出到ElasticSearch，最终在Kibana以可视化的web界面呈现</p>
 						</li>
+                        <!--
                         <li>
                             <h2>海口市联动指挥调度系统(2014.12--2016.02)</h2>
                             <ul>
@@ -122,7 +136,6 @@
 								<p>主要负责权限管理模块，使用shiro作为权限模块的开发框架。</p>
 							</ul>
 						</li>
-						<!--
                         <li>
                             <h2>湖南长沙烟草局一卡通平台(2014.10--2015.04)</h2>
                             <ul>

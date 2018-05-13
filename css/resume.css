@@ -17,12 +17,14 @@ li {
 
 .info > h1 {
 	line-height: 2;
+    margin-bottom: -7px;
 }
 
 .info > .underline {
 	width: 90%;
 	height: 2px;
 	margin: auto;
+    margin-bottom: 30px;
 
 	background-color: rgb(220, 65, 65);
 }
@@ -47,8 +49,8 @@ li {
 	line-height: 1.5;
 }
 
-.project ul li ul {
-	margin-top: 2px;
+.project ul li {
+	margin-bottom: 20px;
 }
 
 .rightContain h1 {
@@ -111,10 +113,6 @@ body {
 	float: left;
 }
 
-.leftContain li {
-    list-style-image: url(../static/left-li.png);
-}
-
 .rightContain {
     width: 60%;
     height: 100%;
@@ -123,25 +121,14 @@ body {
     vertical-align: top;
 }
 
-.rightContain li {
-    list-style-image: url(../static/right-li.png);
-}
-
 .head {
     height: 40%;
+    margin-bottom: 100px;
 }
 
 .head .name p {
     color: white;
     font-size: 50px;
-}
-
-.contact {
-    height: 25%;
-}
-
-.contact ul {
-	padding-top: 40px;
 }
 
 .info {
@@ -153,7 +140,7 @@ body {
 }
 
 .null {
-    height: 1%;
+    height: 5%;
 }
 
 .experience {
@@ -161,7 +148,7 @@ body {
 }
 
 .skill {
-    height: 26%;
+    height: 30%;
 }
 
 .skill li {
@@ -219,7 +206,7 @@ body {
 }
 
 .border {
-	width: 80%;
+	width: 90%;
 	height: 100%;
 	margin: auto;
 
