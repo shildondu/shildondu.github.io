@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html lang="zh-CN">
-  <head>
+
+<head>
     <title>Shildon's Resume</title>
     <link rel="icon" href="./static/D.png" />
     <link rel="stylesheet" href="./css/resume.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+
+<body>
     <div class="allContain">
         <div class="contain">
             <div class="decorate">
@@ -16,25 +19,19 @@
                 <div class="head">
                     <div class="align">
                         <div class="image">
-                            <!--
                             <img class="me" src="./static/head.jpg" />
-                        -->
-                        </div>
-                        <div class="space">
                         </div>
                         <div class="name">
                             <p>杜 晓 东</p>
                         </div>
-                        <div class="goal">
-							<div class="border">
-                            	<h2>求职意向: Java开发工程师</h2>
-							</div>
-                        </div>
+                        <!-- <div class="goal"> -->
+                        <!-- <h2>求职意向: Java开发工程师</h2> -->
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="info">
-                    <h1>基本信息</h1>
-					<div class="underline"></div>
+                    <!-- <h1>基本信息</h1> -->
+                    <!-- <div class="underline"></div> -->
                     <ul>
                         <li class="fas fa-graduation-cap"> 广东工业大学(本科)</li>
                         <li class="fas fa-book"> 计算机科学与技术</li>
@@ -72,38 +69,52 @@
                 <div class="skill">
                     <h1>职业技能</h1>
                     <ul>
-                        <li class="fas fa-angle-right"> Java语言扎实，掌握集合、IO、NIO、并发包的使用及部分实现。了解JVM、垃圾回收，GC日志分析</li>
-						<li class="fas fa-angle-right"> 熟悉Java Web技术体系，理解微服务架构，掌握Spring、Mybatis等开源框架的使用，了解Spring、MyBatis部分源码</li>
-                        <li class="fas fa-angle-right"> 掌握非关系型数据库Redis、MongoDB的使用，能够合理应用Redis提供的数据结构</li>
+                        <li class="fas fa-angle-right"> Java语言扎实，掌握集合、IO、NIO、concurrent包的使用及部分实现原理。了解JVM、垃圾回收、进程诊断基本命令
+                        </li>
+                        <li class="fas fa-angle-right"> 熟悉Java Web技术生态，掌握Spring、Dubbo、Netty、Mybatis等开源框架的使用及部分源码</li>
+                        <li class="fas fa-angle-right"> 熟悉Kotlin语言，基于Kotlin开发过多个项目</li>
                         <li class="fas fa-angle-right"> 掌握关系型数据库MySQL的设计与使用，对SQL查询优化有一定的了解</li>
-                        <li class="fas fa-angle-right"> 掌握消息队列RabbitMQ的基本设计与原理</li>
-						<li class="fas fa-angle-right"> 掌握Linux操作系统，常用版本控制工具SVN、Git及项目管理工具Maven的使用</li>
-						<li class="fas fa-angle-right"> 了解RPC框架Thrift</li>
-                        <li class="fas fa-angle-right"> 了解JavaScript、CSS、HTML以及JQuery和VueJS等前端框架</li>
+                        <li class="fas fa-angle-right"> 掌握非关系型数据库Redis、MongoDB的使用，能够合理应用Redis提供的数据结构</li>
+                        <li class="fas fa-angle-right"> 掌握消息队列Kafka的使用及部分原理</li>
+                        <li class="fas fa-angle-right"> 掌握基本数据结构与算法、操作系统、计算机网络、编译原理的基本知识</li>
                     </ul>
                 </div>
+            </div>
+            <div class="bottomContain">
                 <div class="project">
-                    <h1>工作经验</h1>
+                    <h1>工作经验（欢聚时代 2017-至今）</h1>
                     <ul>
                         <li>
-                            <h2>欢聚时代(YY)电商业务项目组(2017.03--至今)</h2>
-                            <h3>职位：Java开发工程师</h3>
-                            <h3>主要工作：</h3>
-                            <p>1. 负责APP、小程序首页数据的设计与实现，将首页数据抽象为页面、模块、数据源、数据项等，定时缓存到Redis，并提供管理后台实现动态配置，达到扩展性高的要求</p>
-                            <p>2. 基于Spring Quartz实现一个简单的分布式任务调度框架，定时触发任务，并将任务触发事件包装成消息发送到消息队列，具体的任务内容在各个服务的消费者线程进行消费执行。同时提供管理后台，实现动态添加、执行、暂停、删除任务等操作</p>
-                            <p>3. 参与设计优化优惠券服务，对原有优惠券服务进行细分，抽象出更多角色，包括优惠券、池、规则等，以满足变化的运营活动的需求。对慢SQL进行优化分析，通过增加汇总表，以及使用Redis缓存优惠券库存，异步将优惠券库存扣减同步到数据库，以提高并发效率</p>
-                            <p>4. 参与设计搭建RabbitMQ集群，在深圳机房部署2个磁盘节点与2个内存节点，节点之间使用镜像队列进行消息同步，无锡机房部署2个磁盘节点与1个内存节点，机房之间的消息使用federation插件进行协调复制，解决现有MQ可用性低、消息丢失、消息堆积等问题，提供性能安全监控</p>
-                            <p>5. 参与设计实现订单服务、物流服务、商品服务、评价服务、以及各种运营活动</p>
+                            <h2>API开放网关</h2>
+                            <h3>技术栈：Spring WebFlux + Dubbo + Kotlin Coroutine</h3>
+                            <h3>内容简介：</h3>
+                            <p>基于 Spring WebFlux 和 Dubbo 的能力，提供了 HTTP 和 Dubbo 两种接入协议以及非阻塞的IO模型，同时使用 Kotlin
+                                Coroutine
+                                进行异步编程，实现了电商中台各个领域服务的统一API开放网关。网关主要提供了包括：路由转发，参数映射，身份认证，签名校验，限流熔断，统一结果，监控跟踪，防重放攻击，风控，ABTest等能力。并通过对Dubbo线程模型的调优，自己实现Hessian2和JSON的直接转换，绕过一些中间转换环节，不断提升性能，压测结果提升了至少50%的吞吐量。
+                            </p>
                         </li>
-						<li>
-							<h2>网易邮件事业部(2016.05--2016.09)</h2>
-                            <h3>职位：Java开发实习生</h3>
-                            <h3>主要工作：</h3>
-                            <p>1. 参与换卡系统、财经直播、第三方API权限控制、资产分析的开发</p>
-                            <p>2. 调研Swagger等API文档生成框架，引入SpringFox，基于Swagger提供的标准注解，自动生成API文档</p>
-                            <p>3. 调研Zookepper及Redis分布式锁实现方式，实现了一个简单的Redis分布式锁</p>
-                            <p>4. 测试环境搭建ELK Stack集中化日志分析检索服务，使用FileBeat监听不同部服务日志的变化，LogStash进行日志搜集过滤，并输出到ElasticSearch，最终在Kibana以可视化的web界面呈现</p>
-						</li>
+                        <li>
+                            <h2>统一API文档管理平台</h2>
+                            <h3>技术栈：Spring Boot + JavaParser</h3>
+                            <h3>内容简介：</h3>
+                            <p>内部统一的API文档生成系统和管理平台，通过将 Git 仓库代码下载到本地，分析项目依赖，同时基于 JavaParser 对Spring MVC Controller接口和
+                                Dubbo 接口进行语法分析和符号解析，按指定分支将接口文件中的 JavaDoc
+                                转换生成可视化的API文档说明，展示在管理平台上，同时支持 CI 自动化构建工具进行自动生成， JSR 303
+                                验证规范，自动生成请求参数样本和响应结果样本，自定义视图，实现了对代码的完全零入侵（不需要配置构建工具的插件）。</p>
+                        </li>
+                        <li>
+                            <h2>长连接通道管理平台</h2>
+                            <h3>技术栈：Spring Boot + Reactor Netty + Kotlin Coroutine</h3>
+                            <h3>内容简介：</h3>
+                            <p>移动端和Web端的长连接管理平台，基于Reacotr Netty实现通过Mars协议和WebSocket协议接入的能力，使用Kotlin Coroutine进行异步编程，通过对这些信道进行管理，提供各种需要服务端主动下发消息的业务场景。目前该平台分为三个组件：接入点（ap），状态服务和寻址服务，ap服务负责管理信道，状态服务负责管理状态信息，寻址服务负责提供有效最近的接入点地址。</p>
+                        </li>
+                        <li>
+                            <h2>首页数据服务</h2>
+                            <h3>技术栈：Spring Boot + MyBatis + MySQL + Redis</h3>
+                            <h3>内容简介：</h3>
+                            <p>一件APP和小程序的首页数据服务，将页面数据抽象为页面、模块、数据组、数据项，同时也抽象出一套过滤匹配的模型，能够支持通过管理后台对页面数据进行动态配置，实现较为灵活的支持多种复杂的运营场景。并通过本地缓存和Redis缓存，提高并发处理能力；面对日益增长的页面数据量，通过记录最近访问的页面，只缓存访问过的页面，减少内存消耗。
+                            </p>
+                        </li>
                         <!--
                         <li>
                             <h2>海口市联动指挥调度系统(2014.12--2016.02)</h2>
@@ -155,5 +166,6 @@
             </div>
         </div>
     </div>
-  </body>
+</body>
+
 </html>
