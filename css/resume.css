@@ -12,7 +12,7 @@ a {
 li {
     list-style: none;
     
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .info > h1 {
@@ -91,8 +91,8 @@ body {
 }
 
 .allContain {
-    width: 1000px;
-    height: 1415px;
+    width: 1100px;
+    height: 1550px;
     margin: 0 auto;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .rightContain {
-    width: 60%;
+    width: 58%;
     height: 37%;
 
     display: inline-block;
@@ -144,7 +144,7 @@ body {
 }
 
 .bottomContain {
-    width: 94%;
+    width: 92%;
     height: 63%;
 
     margin-left: 30px;
