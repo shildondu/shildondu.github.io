@@ -16,31 +16,34 @@
             <div class="decorate">
             </div>
             <div class="leftContain">
-                <div class="head">
-                    <div class="align">
-                        <div class="image">
-                            <img class="me" src="./static/head.jpg" />
-                        </div>
-                        <div class="name">
-                            <p>杜 晓 东</p>
-                        </div>
-                        <!-- <div class="goal"> -->
-                        <!-- <h2>求职意向: Java开发工程师</h2> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
+                <!-- <div class="head"> -->
+                <!-- <div class="align"> -->
+                <!-- <div class="image"> -->
+                <!-- <img class="me" src="./static/head.jpg" /> -->
+                <!-- </div> -->
+                <!-- <div class="name"> -->
+                <!-- <p>杜 晓 东</p> -->
+                <!-- </div> -->
+                <!-- <div class="goal"> -->
+                <!-- <h2>求职意向: Java开发工程师</h2> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="null"></div>
                 <div class="info">
-                    <!-- <h1>基本信息</h1> -->
-                    <!-- <div class="underline"></div> -->
+                    <h1>基本信息</h1>
+                    <div class="underline"></div>
                     <ul>
-                        <li class="fas fa-graduation-cap"> 广东工业大学(本科)</li>
-                        <li class="fas fa-book"> 计算机科学与技术</li>
-                        <li class="fas fa-mobile-alt"> 15622377939</li>
+                        <li>姓名：杜晓东</li>
+                        <li>生日：1994-07-30</li>
+                        <li>毕业院校：广东工业大学（本科）</li>
+                        <li>专业：计算机科学与技术</li>
+                        <li>手机号码：15622377939</li>
+                        <li>邮箱：shildondu@gmail.com</li>
                         <!--
                         <li>Blog: <a href="http://shildon.leanote.com/">http://shildon.leanote.com/</a></li>
                         <li>GitHub: <a href="https://github.com/shildondu">https://github.com/shildondu</a></li>
                         -->
-                        <li class="fas fa-envelope"> shildondu@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +72,7 @@
                 <div class="skill">
                     <h1>职业技能</h1>
                     <ul>
-                        <li class="fas fa-angle-right"> Java语言扎实，掌握集合、IO、NIO、concurrent包的使用及部分实现原理。了解JVM、垃圾回收、进程诊断基本命令
+                        <li class="fas fa-angle-right"> Java语言扎实，掌握集合、IO、JUC的使用及部分实现原理。了解JVM、垃圾回收、进程诊断基本命令
                         </li>
                         <li class="fas fa-angle-right"> 熟悉Java Web技术生态，掌握Spring、Dubbo、Netty、Mybatis等开源框架的使用及部分源码</li>
                         <li class="fas fa-angle-right"> 熟悉Kotlin语言，基于Kotlin开发过多个项目</li>
@@ -77,9 +80,19 @@
                         <li class="fas fa-angle-right"> 掌握非关系型数据库Redis、MongoDB的使用，能够合理应用Redis提供的数据结构</li>
                         <li class="fas fa-angle-right"> 掌握消息队列Kafka的使用及部分原理</li>
                         <li class="fas fa-angle-right"> 掌握基本数据结构与算法、操作系统、计算机网络、编译原理的基本知识</li>
+                        <li class="fas fa-angle-right"> 具有一定的技术热情，喜欢学习尝试新技术</li>
+                    </ul>
                     </ul>
                 </div>
             </div>
+            <!--
+                样例1：参与XX项目从0到1的搭建，负责项目的架构设计、技术选型和整体环境搭建。
+                样例2：引入了XX技术/框架，解决了XX问题，提升了XX指标50%。
+                样例3：搭建XX工具，实现了XX功能的可视化、配置化、自动化（智能化）。
+                样例4：沉淀了XX技术，复用到XX个部门/小组，提升了开发效率50%。
+                样例5：负责系统整体的稳定性保障，使用隔离、熔断、降级、限流、XX，保障了系统可用性99.99%以上、XX指标99.99%以上。
+                样例6：负责X个人的小团队，团队同学在部门表现突出，XX指标排名第1，获得XX荣誉。
+            -->
             <div class="bottomContain">
                 <div class="project">
                     <h1>工作经验（欢聚时代 2017-至今）</h1>
@@ -87,33 +100,54 @@
                         <li>
                             <h2>API开放网关</h2>
                             <h3>技术栈：Spring WebFlux + Dubbo + Kotlin Coroutine</h3>
-                            <h3>内容简介：</h3>
-                            <p>基于 Spring WebFlux 和 Dubbo 的能力，提供了 HTTP 和 Dubbo 两种接入协议以及非阻塞的IO模型，同时使用 Kotlin
+                            <h3>项目简介：</h3>
+                            <p>基于 Spring WebFlux 和 Dubbo 的能力，提供了 HTTP、Dubbo、YRPC（内部）三种接入协议以及非阻塞的IO模型，同时使用 Kotlin
                                 Coroutine
-                                进行异步编程，实现了电商中台各个领域服务的统一API开放网关。网关主要提供了包括：路由转发，参数映射，身份认证，签名校验，限流熔断，统一结果，监控跟踪，防重放攻击，风控，ABTest等能力。并通过对Dubbo线程模型的调优，自己实现Hessian2和JSON的直接转换，绕过一些中间转换环节，不断提升性能，压测结果提升了至少50%的吞吐量。
+                                进行异步编程，实现了电商中台各个领域服务的统一API开放网关。网关主要提供了包括：路由转发，参数映射，身份认证，签名校验，限流熔断，统一结果，监控跟踪，防重放攻击，风控，ABTest等能力。
                             </p>
+                            <h3>工作重点：</h3>
+                            <p>1. 负责项目核心功能模块的需求收集评审，设计开发，以及日常的维护和迭代。</p>
+                            <p>2. 基于责任链模式抽象请求响应处理链路，使得代码更加解耦，新增功能变得简单。</p>
+                            <p>3. 负责性能优化，对API开放网关进行压力测试，并分析性能瓶颈，通过去掉 Dubbo
+                                默认服务端和消费端的业务线程池，减少线程分配带来的内存消耗和线程上下文切换带来的CPU消耗，同时使用 Jackson Streaming API 替换 Jackson
+                                Databind API，并且自己实现了 Hessian2 和 JSON 的直接转换，绕过了一些中间转换环节，减少CPU消耗与内存占用，在 2C4G
+                                的配置下压测吞吐量可达3500。</p>
                         </li>
                         <li>
                             <h2>统一API文档管理平台</h2>
                             <h3>技术栈：Spring Boot + JavaParser</h3>
                             <h3>内容简介：</h3>
-                            <p>内部统一的API文档生成系统和管理平台，通过将 Git 仓库代码下载到本地，分析项目依赖，同时基于 JavaParser 对Spring MVC Controller接口和
-                                Dubbo 接口进行语法分析和符号解析，按指定分支将接口文件中的 JavaDoc
-                                转换生成可视化的API文档说明，展示在管理平台上，同时支持 CI 自动化构建工具进行自动生成， JSR 303
+                            <p>内部统一的API文档生成系统和管理平台，通过将 Git 仓库代码下载到本地，分析项目依赖，扫描分析 Spring MVC Controller接口和
+                                Dubbo 接口代码和注释，将其转换生成可视化的API文档说明，展示在管理平台上，同时支持 CI 自动化构建工具进行自动生成， JSR 303
                                 验证规范，自动生成请求参数样本和响应结果样本，自定义视图，实现了对代码的完全零入侵（不需要配置构建工具的插件）。</p>
+                            <h3>工作重点：</h3>
+                            <p>1. 负责项目核心功能模块的需求收集评审，设计开发，以及日常的维护和保障。</p>
+                            <p>2. 基于 JavaParser 的能力，对源代码文件进行语法分析，生成抽象语法树，并基于访问者模式进行树的节点遍历，同时进行符号解析，生成接口文档的定义数据。</p>
+                            <p>3. 基于 微内核 + 插件 的设计原则，抽象出代码源，依赖源，结果转换作为扩展点，提供扩展能力。</p>
                         </li>
                         <li>
                             <h2>长连接通道管理平台</h2>
                             <h3>技术栈：Spring Boot + Reactor Netty + Kotlin Coroutine</h3>
                             <h3>内容简介：</h3>
-                            <p>移动端和Web端的长连接管理平台，基于Reacotr Netty实现通过Mars协议和WebSocket协议接入的能力，使用Kotlin Coroutine进行异步编程，通过对这些信道进行管理，提供各种需要服务端主动下发消息的业务场景。目前该平台分为三个组件：接入点（ap），状态服务和寻址服务，ap服务负责管理信道，状态服务负责管理状态信息，寻址服务负责提供有效最近的接入点地址。</p>
+                            <p>移动端和Web端的长连接管理平台，基于Reacotr Netty实现面向移动端的Mars协议和面向Web端的WebSocket协议，使用Kotlin
+                                Coroutine进行异步编程，通过对这些信道进行管理，提供各种需要服务端主动下发消息的业务场景。目前该平台由三个组件组成：寻址服务、接入服务和状态服务，寻址服务负责提供接入服务的ip列表，接入服务负责管理信道，状态服务负责管理状态信息。
+                            </p>
+                            <h3>工作重点：</h3>
+                            <p>1. 负责寻址服务和接入服务功能模块的需求收集评审，设计开发，以及日常的维护和迭代。</p>
+                            <p>2. 基于 DNS 实现就近接入寻址服务，寻址服务通过 nacos 管理当前机房和其他机房的接入服务ip列表，根据不同的策略排序后返回给客户端。</p>
+                            <p>3. 接入服务通过设备认证和用户绑定接口，将设备信息和用户信息等环境信息绑定到信道上，同时将信道缓存在本地。用户订阅时，将订阅相关信息发送给状态服务，状态服务记录用户与信道的订阅关系，并提供发送下行消息的能力。</p>
+                            <p>4. 实现优雅停机：接入 Spring 容器的生命周期，在容器关闭前解除该节点在 nacos 上的注册信息，然后发送节点下线消息给客户端，客户端接收到节点下线消息后，主动断开连接，并且重新从寻址服务查询ip列表，重新建立信道。</p>
                         </li>
                         <li>
-                            <h2>首页数据服务</h2>
+                            <h2>页面数据服务</h2>
                             <h3>技术栈：Spring Boot + MyBatis + MySQL + Redis</h3>
                             <h3>内容简介：</h3>
-                            <p>一件APP和小程序的首页数据服务，将页面数据抽象为页面、模块、数据组、数据项，同时也抽象出一套过滤匹配的模型，能够支持通过管理后台对页面数据进行动态配置，实现较为灵活的支持多种复杂的运营场景。并通过本地缓存和Redis缓存，提高并发处理能力；面对日益增长的页面数据量，通过记录最近访问的页面，只缓存访问过的页面，减少内存消耗。
+                            <p>一件APP和小程序的页面数据服务，提供APP和小程序各个页面以及活动页的展示数据的获取以及丰富的管理后台能力，通过管理后台对页面数据进行动态配置，较为灵活的支持多种复杂的运营场景。支持导航条、banner、双栏列表、直播间列表、商品列表等多种不同的UI类型。
                             </p>
+                            <h3>工作重点：</h3>
+                            <p>1. 负责项目核心功能模块的需求评审，设计开发，以及日常的维护和保障。</p>
+                            <p>2. 将页面数据抽象为页面、模块、数据组、数据项，同时也抽象出一套过滤匹配的模型，能够支持进行扩展，满足运营需求。</p>
+                            <p>3. 通过定时将页面数据缓存到本地和Redis，后台修改时通过消息通知进行缓存更新，提高并发处理能力；面对日益增长的页面数据量，通过记录最近访问的页面，只缓存访问过的页面，减少Redis内存消耗。</p>
                         </li>
                         <!--
                         <li>
